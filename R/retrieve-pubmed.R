@@ -30,12 +30,9 @@ query1 <- '("virtual reality") AND (treatment)'
 res1 <- EUtilsSummary(query1,
                       type = "esearch",
                       db = "pubmed",
-                      retmax = 1000)
+                      retmax = 9999)
 
-res2 <- EUtilsSummary(query1,
-                      type = "esearch",
-                      db = "pubmed",
-                      retstart = 1001)
+
 
 
 count1 <- res1@count
@@ -45,12 +42,12 @@ count1 <- res1@count
 # requests in a short period of time
 
 
-title <- ArticleTitle(EUtilsGet(res1))
-abstract <- AbstractText(EUtilsGet(res1))
-id <- ArticleId(EUtilsGet(res1))
-day <- DayArticleDate(EUtilsGet(res1))
-month <- MonthArticleDate(EUtilsGet(res1))
-year <- YearArticleDate(EUtilsGet(res1))
+title <- ArticleTitle(EUtilsGet(res1@PMID[1:100]))
+abstract <- AbstractText(EUtilsGet(res1@PMID[1:100]))
+id <- ArticleId(EUtilsGet(res1@PMID[1:100]))
+day <- DayArticleDate(EUtilsGet(res1@PMID[1:100]))
+month <- MonthArticleDate(EUtilsGet(res1@PMID[1:100]))
+year <- YearArticleDate(EUtilsGet(res1@PMID[1:100]))
 
 results1 <- data.frame(title, abstract, id, day, month, year)
 

@@ -44,7 +44,10 @@ This repo demonstrates the use of the `RISmed` package to access PubMed
 articles along with `tidytext` and `tidyverse` packages to analyse the text.
 
 ```
-install.packages("RISmed", "tidyverse", "tidytext", "textdata")
+install.packages("RISmed")
+install.packages("tidyverse")
+install.packages("tidytext")
+install.packages("textdata")
 ```
 To cite package ‘RISmed’ in publications use:
 
