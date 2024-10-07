@@ -3,7 +3,7 @@ library(tidytext)
 
 
 # Read in the after data
-data <- read_csv("data-raw/results1.csv")
+data <- read_csv("data-raw/abstracts.csv")
 
 # filter out the rows with no abstracts
 data <- data |>

@@ -1,65 +1,52 @@
-
 # load packages -----------------------------------------------------------
 
-library(RISmed)
+
+library(easyPubMed)
 library(tidyverse)
 
 
 
-# SINGLE QUERY ------------------------------------------------------------
-
-# RISmed refreence manual:
-#     https://cran.r-project.org/web/packages/RISmed/RISmed.pdf
-# RISmed tutorial:
-#     https://datascienceplus.com/search-pubmed-with-rismed/
-#     https://amunategui.github.io/pubmed-query/
-
 
 # define search terms -----------------------------------------------------
 # query from https://pubmed.ncbi.nlm.nih.gov/advanced/
-
 query1 <- '("virtual reality") AND (treatment)'
 
-# notes - you will need to enclose your search in quotes
-# if the search term includes quotes, you'll need to use single quotes to
-# enclose the search term, and double quotes within the search term
-# "virtual reality" finds that exact phrase, rather than the individual words
+# get pubmed ids ----------------------------------------------------------
+entrez_id <- get_pubmed_ids(query1)
 
-# search for articles -----------------------------------------------------
+# get abstracts in xml format --------------------------------------------
+# this will get up to 9999 abstracts
+# if you have more results, you will need to run this function
+# multiple times - discuss first as you need to change the retstart
 
-res1 <- EUtilsSummary(query1,
-                      type = "esearch",
-                      db = "pubmed",
-                      retmax = 9999)
+# while you are experimenting, set retmax to a low number like 10
+# that means everything will run quickly and you can ensure that
+# the code is functioning
+abstracts_txt <- fetch_pubmed_data(entrez_id, retmax = 9999)
 
+# convert to a list of articles ------------------------------------------
+PM_list <- articles_to_list(pubmed_data = abstracts_txt)
 
+#  recusively process PubMed records -------------------------------------
+# ######## This will take some time #########
 
-
-count1 <- res1@count
-# download results --------------------------------------------------------
-
-# take some time. the server will refuse to download if you make too many
-# requests in a short period of time
-title <- 1:count1
-
-for (i in 1:count1) {
-  print(i)
-  title[i] <- ArticleTitle(EUtilsGet(res1@PMID[i]))
-  Sys.sleep(5)
-}
-
-
-
-abstract <- AbstractText(EUtilsGet(res1@PMID[1:100]))
-id <- ArticleId(EUtilsGet(res1@PMID[1:100]))
-day <- DayArticleDate(EUtilsGet(res1@PMID[1:100]))
-month <- MonthArticleDate(EUtilsGet(res1@PMID[1:100]))
-year <- YearArticleDate(EUtilsGet(res1@PMID[1:100]))
-
-results1 <- data.frame(title, abstract, id, day, month, year)
+# max_chars = -1 means that the full abstract will be downloaded
+# getAuthors = FALSE means that the authors will not be downloaded
+#     that means you get a row per article. if you set to TRUE,
+#     it will take much longer and you get a row per author (so lots of
+#     rows per article)
+xx <- lapply(PM_list, article_to_df,
+             max_chars = -1,
+             getAuthors = FALSE)
+full_df <- do.call(rbind, xx)
 
 
+# drop empty columns and rows without an abstract ------------------------
+full_df <- full_df |>
+  select(-keywords, -lastname, -firstname, address, -email) |>
+  filter(!is.na(abstract))
 
-# save results to file ----------------------------------------------------
-# import your saved results for analysis rather than spamming the server
-write_csv(results1, "data-raw/results1.csv")
+# write the data to a csv file -------------------------------------------
+write_csv(full_df, "data-raw/abstracts.csv")
+# when you are working on your project, import the data from the file
+# rather than downloading again.

@@ -40,31 +40,27 @@ Projects could use:
     data that are relatively easy to analyse.
 
 
-This repo demonstrates the use of the `RISmed` package to access PubMed 
+This repo demonstrates the use of the `easyPubMed` package to access PubMed 
 articles along with `tidytext` and `tidyverse` packages to analyse the text.
 
 ```
-install.packages("RISmed")
+install.packages("devtools")
+install.packages("easyPubMed")
 install.packages("tidyverse")
 install.packages("tidytext")
 install.packages("textdata")
 ```
-To cite package ‘RISmed’ in publications use:
 
-  Kovalchik S (2021). _RISmed: Download Content from NCBI Databases_. R package version 2.3.0,
-  <https://CRAN.R-project.org/package=RISmed>.
 
-A BibTeX entry for LaTeX users is
+You can download this repo with the following command:
 
-  @Manual{,
-    title = {RISmed: Download Content from NCBI Databases},
-    author = {Stephanie Kovalchik},
-    year = {2021},
-    note = {R package version 2.3.0},
-    url = {https://CRAN.R-project.org/package=RISmed},
-  }
+```
+usethis::use_course("3mmaRand/bsc-proj-tut-1")
+```
 
-To cite package ‘tidyverse’ in publications use:
+
+
+
 
 To cite package ‘tidyverse’ in publications use:
 
@@ -106,3 +102,17 @@ A BibTeX entry for LaTeX users is
     journal = {JOSS},
   }
 
+To cite package ‘easyPubMed’ in publications use:
+
+  Fantini D (2019). _easyPubMed: Search and Retrieve Scientific Publication Records from PubMed_. R package version 2.13,
+  <https://CRAN.R-project.org/package=easyPubMed>.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {easyPubMed: Search and Retrieve Scientific Publication Records from PubMed},
+    author = {Damiano Fantini},
+    year = {2019},
+    note = {R package version 2.13},
+    url = {https://CRAN.R-project.org/package=easyPubMed},
+  }
