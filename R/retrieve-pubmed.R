@@ -40,9 +40,16 @@ count1 <- res1@count
 
 # take some time. the server will refuse to download if you make too many
 # requests in a short period of time
+title <- 1:count1
+
+for (i in 1:count1) {
+  print(i)
+  title[i] <- ArticleTitle(EUtilsGet(res1@PMID[i]))
+  Sys.sleep(5)
+}
 
 
-title <- ArticleTitle(EUtilsGet(res1@PMID[1:100]))
+
 abstract <- AbstractText(EUtilsGet(res1@PMID[1:100]))
 id <- ArticleId(EUtilsGet(res1@PMID[1:100]))
 day <- DayArticleDate(EUtilsGet(res1@PMID[1:100]))
