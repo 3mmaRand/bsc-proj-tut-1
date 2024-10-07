@@ -59,8 +59,21 @@ usethis::use_course("3mmaRand/bsc-proj-tut-1")
 ```
 
 
+## Example
+
+There are two scripts
+
+- `retrieve-pubmed.R`
+Uses the query '("virtual reality") AND (treatment)' to find and download
+abstracts of papers from PubMed. The abstracts are saved in a csv file:
+`data-raw/abstracts.csv`
+
+- `analysis.R`
+Does some simple analysis
 
 
+
+## Packages
 
 To cite package ‘tidyverse’ in publications use:
 

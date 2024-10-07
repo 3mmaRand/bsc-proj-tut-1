@@ -27,7 +27,7 @@ abstracts_txt <- fetch_pubmed_data(entrez_id, retmax = 9999)
 # convert to a list of articles ------------------------------------------
 PM_list <- articles_to_list(pubmed_data = abstracts_txt)
 
-#  recusively process PubMed records -------------------------------------
+#  recursively process PubMed records -------------------------------------
 # ######## This will take some time #########
 
 # max_chars = -1 means that the full abstract will be downloaded
@@ -43,8 +43,7 @@ full_df <- do.call(rbind, xx)
 
 # drop empty columns and rows without an abstract ------------------------
 full_df <- full_df |>
-  select(-keywords, -lastname, -firstname, address, -email) |>
-  filter(!is.na(abstract))
+  select(-keywords, -lastname, -firstname, -address, -email)
 
 # write the data to a csv file -------------------------------------------
 write_csv(full_df, "data-raw/abstracts.csv")
