@@ -1,36 +1,7 @@
-library(tidyverse)
-library(tidytext)
-
-
-# Read data
-data <- read_csv("data-raw/abstracts.csv")
-
-
-# Find out some basic information about the data
-# we have 4997 articles
-
-data |>
-  ggplot(aes(x = factor(year))) +
-  geom_bar()
-# there are abstracts from 2019 to 2024
-
-
-
-data <- data |>
-  filter(!is.na(abstract))
-# some articles do not have abstracts.  we have 4777 abstracts
-
-# abstracts per year
-data |>
-  ggplot(aes(x = factor(year))) +
-  geom_bar()
-# there are abstracts from 2019 to 2024
-
-
 # tokenising is key step in the analysis
 # it breaks the abstracts down into words
 # (or bigrams, trigrams etc)
-tidy_abstracts <- data |>
+tidy_abstracts <- vr_treatment |>
   unnest_tokens(word, abstract)
 
 
@@ -91,14 +62,14 @@ sentiment_afinn_summary <- sentiment_afinn |>
             sd = sd(value))
 
 ggplot() +
-  geom_point(data = sentiment_afinn,
+  geom_point(vr_treatment = sentiment_afinn,
              aes(x = year, y = value),
              position = position_jitter(),
              colour = "gray50") +
-  geom_errorbar(data = sentiment_afinn_summary,
+  geom_errorbar(vr_treatment = sentiment_afinn_summary,
                 aes(x = year, ymin = mean - sd, ymax = mean + sd),
                 width = 0.3) +
-  geom_errorbar(data = sentiment_afinn_summary,
+  geom_errorbar(vr_treatment = sentiment_afinn_summary,
                 aes(x = year, ymin = mean, ymax = mean),
                 width = 0.2)
 
