@@ -17,22 +17,22 @@ vr_treatment <- read_csv("data-raw/abstracts_supp.csv")
 # Are the articles with abstract about the same sorts
 # of things as those with abstracts?
 
+# # custom stop words
+# stop_words |> View()
+#
+# # add custom stop words to the stop words list
+# stop_words <- stop_words |>
+#   bind_rows(
+#     tibble(word = c("virtual", "reality"),
+#            lexicon = c("custom", "custom")))
+
+# WORDS
 # tokenising is key step in the analysis
 # it breaks the abstracts down into words
 # (or bigrams, trigrams etc)
 title_word <- vr_treatment |>
   unnest_tokens(word, title) |>
   anti_join(stop_words)
-
-title_bigram <- vr_treatment |>
-  unnest_tokens(word, title,
-                token = "ngrams", n = 2)
-
-title_trigram <- vr_treatment |>
-  unnest_tokens(word, title,
-                token = "ngrams", n = 3)
-
-# WORDS
 
 # tabulate words in the two types of title
 title_word_count <- title_word |>
@@ -41,9 +41,8 @@ title_word_count <- title_word |>
   mutate(percent = 100*n/sum(n))
 
 title_word_count |>
-  filter(percent > 0.3) |>
-  mutate(word = reorder(word, percent))  |>
-  ggplot(aes(percent, word)) +
+  filter(percent > 0.4) |>
+  ggplot(aes(x = percent, y = reorder(word, percent))) +
   geom_col() +
   facet_wrap(~ has_abstract, scales = "free")
 
@@ -89,6 +88,12 @@ wordcloud(title_word_count_without$word,
           max.words = 300)
 
 # BIGRAMS
+
+# tokenising
+title_bigram <- vr_treatment |>
+  unnest_tokens(word, title,
+                token = "ngrams", n = 2)
+
 # tabulate words in the two types of title
 title_bigram_count <- title_bigram |>
   count(has_abstract, word, sort = TRUE) |>
@@ -142,3 +147,9 @@ wordcloud(title_bigram_count_with$word,
 wordcloud(title_bigram_count_without$word,
           title_bigram_count_without$n,
           max.words = 300)
+
+# TRIGRAMS
+# tokenising
+title_trigram <- vr_treatment |>
+  unnest_tokens(word, title,
+                token = "ngrams", n = 3)
