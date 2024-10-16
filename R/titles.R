@@ -42,12 +42,17 @@ title_word_count <- title_word |>
 
 title_word_count |>
   filter(percent > 0.4) |>
+  filter(has_abstract == TRUE) |>
   ggplot(aes(x = percent, y = reorder(word, percent))) +
-  geom_col() +
-  facet_wrap(~ has_abstract, scales = "free")
+  geom_col()
 
+title_word_count |>
+  filter(percent > 0.4) |>
+  filter(has_abstract == FALSE) |>
+  ggplot(aes(x = percent, y = reorder(word, percent))) +
+  geom_col()
 
-# plot proportions against each other
+# plot percent against each other
 title_word_count |>
   pivot_wider(names_from = has_abstract,
               values_from = percent,
