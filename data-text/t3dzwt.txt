@@ -1,0 +1,34 @@
+AskScience AMA Series: Molecular engineering (MolE) encompasses everything from protein design, nanomaterials, vaccine development, battery/solar cell design, &amp; much more. We're a group of students, professors &amp; staff connected to the University of Washington's MolE Institute. AUA about MolE! We are graduate students, staff, and faculty from the University of Washington Molecular Engineering and Science (MolES) Institute. Molecular Engineering is a new field; we were one of the first Molecular Engineering graduate programs in the world, and one of only two in the United States. Though MolES only opened in 2014, we have had many discoveries to share!
+
+Molecular engineering itself is a broad and evolving field that seeks to understand how molecular properties and interactions can be manipulated to design and assemble better materials, systems, and processes for specific functions. Any time you attempt to change the object-level behavior of something by precisely altering it on the molecular level - given knowledge of how molecules in that "something" interacts with one another - you're engaging in a type of molecular engineering. The applications are endless! Some specific examples of Molecular Engineering research being done within the labs of the MolES Institute are:
+
+1. MolES faculty member and Chemistry professor Al Nelson developed a new way to produce medicines and chemicals and preserve them in portable, modular "biofactories" embedded in water-based gels known as hydrogels. This approach could enable access to critical medicines and other compounds in low-resource areas.
+2. The Baker lab in MolES and Biochemistry is engineering artificial proteins to self-assemble on a crystal surface. The ability to program these interactions could enable the design of new biomimetic materials with customized chemical reactivity or mechanical properties, that can serve as scaffolds for nano-filters, solar cells or electronic circuits.
+3. Bioengineering/MolES Institute Professor Kelly Stevens developed a new 3D printing approach to create biocompatible hydrogels with life-like vasculature - opening the possibility of printing living human tissue for things like organ replacement!
+4. Researchers in MolES and Chemical Engineering professor Elizabeth Nance's lab are attempting to deliver therapeutics to the brain using tiny nanoparticles that can effectively cross the blood-brain-barrier in brain injury and disease.
+5. MolES PhD student Jason Fontana is working in the labs of James Carothers and Jesse Zalatan to develop tools that facilitate genetic engineering in bacteria for optimizing biosynthesis of valuable products.
+
+Molecular engineering is recognized by the National Academy of Engineering as one of the areas of education and research most critical to ensuring the future economic, environmental and medical health of the U.S. As a highly interdisciplinary field spanning across the science and engineering space, students of Molecular Engineering have produced numerous impactful scientific discoveries. We specifically believe that Molecular Engineering could be an exciting avenue for up-and-coming young scientists, and thus we would like to further general awareness of our discipline!
+
+
+Our panelists today consist of faculty members of the University of Washington MolE Institute, as well as PhD students in the MolE program. They are:
+
+Faculty:
+
++ Alshakim Nelson (/u/polymerprof) - Associate Professor of Chemistry, Director of Education of the MolE Institute. Research Interests - polymer chemistry, biohybrid materials, stimuli-responsive materials, 3D printing
++ Neil King (/u/ProteinKing_MolES) - Assistant Professor of Biochemistry, Institute of Protein Design. Research Interests - protein design, self-assembling protein nanoparticles, vaccine design
++ Jeff Nivala (/u/technomolecularprof) - Research Assistant Professor, Molecular Information Systems Lab, Allen School of Computer Science and Engineering. Research Interests - synthetic biology, DNA data storage, nanopore sensing, single-molecule protein sequencing, machine learning for biological systems design, and cyber-bio security
++ David Bergsman (/u/ProfBergsman) - Assistant Professor of Chemical Engineering, Research Interests - ultrathin nanostructures, nanocoatings, chemical separations, water purification, data science for material design
++ Doug Ballard (/u/uw-moles) - Graduate Program Advisor of the MolE PhD Program, MolE Institute Representative
+
+Students:
+
++ Ben Nguyen (/u/nguyencd296) - polymeric drug delivery systems, polymer-drug conjugates, cancer immunotherapy, renal drug delivery
++ Evan Pepper (/u/evanpepper) - human microbiome, microbial evolution
++ Phuong Nguyen (/u/npnguyen8) - nanomedicine, neuroscience, biomaterials
++ Ayumi Pottenger (/u/errorhandlenotfound) - infectious disease, drug delivery, polymer chemistry
++ Olivia Dotson (/u/OliviaDotson) - nanomedicine, materials synthesis
++ Marti Tooley (/u/MartiTooley)- protein engineering, vaccine development, immune modulation
++ Cholpisit Ice Kiattisewee (/u/theicechol) - bacterial synthetic biology, CRISPR
+
+We'll be on from 11-5PM PST (2-8 PM ET / 14-20 UT), AUA!

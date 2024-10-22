@@ -1,0 +1,7 @@
+Moderna has announced that their vaccine is effective against the new variants but said "pseudovirus neutralizing antibody titers were approximately 6-fold lower relative to prior variants" in regards to the SA Variant. What are the implications of this? Here is the full quote from Moderna's article [here](https://investors.modernatx.com/news-releases/news-release-details/moderna-covid-19-vaccine-retains-neutralizing-activity-against)...
+
+*"For the B.1.351 variant, vaccination with the Moderna COVID-19 Vaccine produces neutralizing antibody titers that remain above the neutralizing titers that were shown to protect NHPs against wildtype viral challenge. While the Company expects these levels of neutralizing antibodies to be protective, pseudovirus neutralizing antibody titers were approximately 6-fold lower relative to prior variants. These lower titers may suggest a potential risk of earlier waning of immunity to the new B.1.351 strains."*
+
+Does "6 fold lower" mean 6 times less effective? If the vaccine was shown to be over 90% effective for the older variants, is this any cause for concern?
+
+I know Moderna is looking into the possibility of a third booster shot.

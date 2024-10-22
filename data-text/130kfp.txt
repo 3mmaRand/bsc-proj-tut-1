@@ -1,0 +1,7 @@
+Why do dart guns require less precision than a medical syringe? Whenever I go to the doctor for blood samples or vaccines, they always insert the syringe in an arterie. But I never see hunters aiming for arteries on animals, yet the tranquilizing effect stil happens. The doctor also needs to feel my arm to find the arteries, something I imagine would be impossible for hunters.
+
+I know the blood circulatory system is the body's way of transporting hormones and important nutrients around the body. Do tranquilizing darts:
+
+1. Affect the nervous system? The body's other method of transporting, used for electrical signals.
+2. Have so strong dose that they affect blood stream even when fired into tissue?
+3. Actually hit arteries? Who knows, maybe I'm underestimating the skills of hunters?

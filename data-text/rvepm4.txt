@@ -1,0 +1,5 @@
+When you successfully fight off a mutated pathogen via antibodies from a previous infection/vaccination (that have reduced effectiveness, but still get the job done), does your body create updated antibodies for the mutated pathogen? This question is geared towards the Omicron Covid-19 outbreak, but really extends to the immune system in general.
+
+After receiving a booster of the Covid-19 vaccine, your body will produce antibodies targeting the original strain of the virus. Even though the potency of the antibodies against the Omicron variant is greatly diminished, this is still thought to improve your defenses against the disease.
+
+I'm particularly interested in the case where your body easily defeats an exposure to Omicron due to a large abundance of antibodies from a recent booster. Will the body bother creating updated antibodies in this case? Or will subsequent exposures still carry risk of infection, especially as the level of antibodies in your system wane over time since receiving the booster?

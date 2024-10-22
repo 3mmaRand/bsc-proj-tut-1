@@ -1,0 +1,5 @@
+Is it possible for the human immune system to "forget" any pathogen after vaccination as time passes? How does this work considering that information on certain pathogens are also retained by the immune system and does this vary based on different pathogens? If my understanding is correct, after being vaccinated, the body produces antibodies against a particular pathogen. This can offer protection to the body if any live pathogen were to attack the body.
+
+But, and contextually in case of COVID-19, I have also read that, even after vaccination, the antibodies that target the virus drop in number with the passage of time. Contrary to this, I have also read that the immune system does have the ability to remember and retain information about any pathogen for extended periods of time. How do these two correlate with each other?
+
+Does/Can the human immune system essentially forget the information on any pathogen after a set period of time? Is this universal to all pathogens and if not, what exactly affects this?

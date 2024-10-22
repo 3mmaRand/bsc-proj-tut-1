@@ -1,0 +1,7 @@
+Why can't we use live SARS-CoV-2 as a Covid-19 vaccine? The SARS-CoV-2 virus infects the upper and lower respiratory tract in humans. As far as I understand, it does not infect other parts of the body, e.g. muscle tissue. So I would expect that if the virus is injected into muscle tissue, it should help the recipient develop immunity, which could then protect them from a conventional Covid-19 infection. This is not being done, so either:
+
+* the virus does infect muscle tissue
+* the virus is not infectious enough in muscle tissue to trigger an immune response
+* the virus would reach the respiratory tract too quickly from the injection site
+
+Is any of the above the right answer? Or is it something else entirely?

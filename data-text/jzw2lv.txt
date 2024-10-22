@@ -1,0 +1,9 @@
+Which cells do the protein synthesis from the mRNA of vaccines? One thing that I'm a bit fuzzy on are the specifics of mRNA vaccine protein synthesis because all explanations I've read of the process simply refer to a really generic ambiguous "host cell" that does the protein synthesis after it absorbes the mRNA from the vaccine.
+
+1. mRNA (packaged in things like liposomes) is injected into the host.
+
+
+2. These liposomes bind with host cells, the mRNA enters, and the host cell ribosomes synthesize proteins based off of the vaccine mRNA and presents these proteins on the outside of their walls. *Do all kinds of cells uptake the vaccine mRNA and synthesize this protein? ie. the vaccine mRNA will be taken up by an assortment of epithelial cells, lymphocytes, myocytes, etc. and each of these will synthesize proteins based on the mRNA.*
+
+
+3. The body's immune system then identifies these surface proteins as foreign and proceeds to build up a memory of the antigen but also kills the otherwise various healthy (but antigen-presenting) cells in the process?
