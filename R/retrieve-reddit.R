@@ -71,4 +71,13 @@ threads_contents$threads |>
 # 3 https://www.reddit.com/r/askscience/comments/maks8z/askscience_ama_series_we_are_drs_emily_landon_and/      187
 # 4  https://www.reddit.com/r/askscience/comments/ka9bwc/a_vaccine_is_94_effective_what_exactly_does_that/       89
 
-# why aren't these the same??
+# why aren't these the same.
+
+# I have checked the actual pages. The number of comments says 20 directly
+# after the original post. But the actual number of comments is 13.
+# The same is true for the other threads. The number of comments is less than
+# printed number. Perhaps that total includes deleted comments or edits.
+# Any way upshot is that the number of comments in the data frame is correct.
+
+
+
