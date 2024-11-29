@@ -53,31 +53,3 @@ threads_contents <- get_thread_content(top_urls$url[1:4])
 #     about the original post
 # 2. threads_contents[["comments"]] - a data frame the comment
 
-# write the data frame comments to  file
-write_csv(threads_contents$comments, "data-raw/ask_sci_vaccine_comments.csv")
-
-threads_contents$comments |>
-  group_by(url) |>
-  count()
-# 1 https://www.reddit.com/r/askscience/comments/j6nu5w/are_vaccine_platforms_reusable/                       13
-# 2 https://www.reddit.com/r/askscience/comments/jsaivo/what_is_the_efficacy_of_normal_vaccines/              42
-# 3 https://www.reddit.com/r/askscience/comments/ka9bwc/a_vaccine_is_94_effective_what_exactly_does_that/     61
-# 4 https://www.reddit.com/r/askscience/comments/maks8z/askscience_ama_series_we_are_drs_emily_landon_and/   163
-
-threads_contents$threads |>
-  select(url, comments)
-# 1                    https://www.reddit.com/r/askscience/comments/j6nu5w/are_vaccine_platforms_reusable/       20
-# 2           https://www.reddit.com/r/askscience/comments/jsaivo/what_is_the_efficacy_of_normal_vaccines/       63
-# 3 https://www.reddit.com/r/askscience/comments/maks8z/askscience_ama_series_we_are_drs_emily_landon_and/      187
-# 4  https://www.reddit.com/r/askscience/comments/ka9bwc/a_vaccine_is_94_effective_what_exactly_does_that/       89
-
-# why aren't these the same.
-
-# I have checked the actual pages. The number of comments says 20 directly
-# after the original post. But the actual number of comments is 13.
-# The same is true for the other threads. The number of comments is less than
-# printed number. Perhaps that total includes deleted comments or edits.
-# Any way upshot is that the number of comments in the data frame is correct.
-
-
-
