@@ -1,0 +1,9 @@
+mRNA vaccines: what become the LNPs that cross the BBB (blood-brain-barrier)? Hello.
+
+It seems that the LNPs (lipid nanoparticles) that contain the mRNA of Covid-19 vaccines from BioNTech and Moderna do - at low doses - pass the BBB. This is mentioned by the [EMA](https://www.ema.europa.eu/en/documents/assessment-report/comirnaty-epar-public-assessment-report_en.pdf) several times in their report, for example p. 54 and discussed [in the comments of an article on Derek Lowe's blog](https://blogs.sciencemag.org/pipeline/archives/2021/01/11/rna-vaccines-and-their-lipids#comment-336216).
+
+If that's indeed the case, what would happen once the mRNA + nanolipid reach the brain? Which cells would pick up the LNPs and for how long would they stay in the brain? If there is cells that can transform this mRNA in proteins, where will these proteins then go, and for how long will they stay in the brain? What about the LNPs: what can/will the brain do with the remaining lipids?
+
+Edit: any difference between Moderna and Pfizer/BioNTech on that front? Their lipid (SM-102 in Moderna's mRNA-1273 and Acuitas ALC-0315 in Pfizer/BioNTech's Cominarty) have strong [similarities](https://www.mdpi.com/2076-393X/9/1/65), but they are not exactly the same.
+
+Thanks!

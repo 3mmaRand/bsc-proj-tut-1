@@ -1,0 +1,3 @@
+I know it takes two weeks for the flu vaccine to be fully effective. I assume effectiveness is zero right before the vaccine is administered, and maximum after two weeks. But is there a graph that shows how effectiveness changes in time? Basically, I'm curious to know, for example, when is it 50% effective, or how soon does it get to 90%, etc.
+
+I'm sure data exists that could allow plotting that graph - I just could not find it myself. Thanks!

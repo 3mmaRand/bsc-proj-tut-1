@@ -1,0 +1,7 @@
+How do we vaccinate against Salmonella, since Salmonella is a bacterium and not a virus? In the UK it is commonly advertised that some food supply chickens are "vaccinated" against Salmonella enterica. Example: [https://mmbr.asm.org/content/81/3/e00007-17](https://mmbr.asm.org/content/81/3/e00007-17)
+
+My education has only described how viral inoculation works. Not antibacterial inoculation. Could someone explain please?
+
+This is especially interesting to me since in the UK the agriculture industry makes quite an issue about how they don't pump the food supply full of antibiotics.
+
+Note, a better flair would be Food Science, since it's engineering rather than pure biology.
