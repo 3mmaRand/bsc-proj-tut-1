@@ -1,5 +1,0 @@
-Do COVID-19 vaccines prevent Long COVID? There have been reports that COVID-19 can for some leave lasting damage to organs (heart, lungs, brain), even among people who only had minor symptoms during the infection.
-
-**\[Q1\]** **Is there any data about prevalence of these problems among those who have been vaccinated?**
-
-Since some of the vaccines, notably the one developed by Oxford-AstraZeneca, report ok-ish efficacy in preventing symptomatic COVID-19, but very high efficacy in preventing severe COVID-19, I'm also interested in how does this vaccine fare in comparison to the ones that have higher reported efficacy against symptomatic COVID-19. So, to phrase that as a question: **\[Q2\] should we expect to see higher rates of Long COVID among people vaccinated with vaccine by Oxford-AstraZeneca than among those vaccinated with vaccine by Pfizer-Biontech or Moderna?**

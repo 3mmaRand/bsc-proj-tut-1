@@ -1,5 +1,0 @@
-COVID vaccine effectiveness and different COVID variants.. why do the variants have different effectiveness? I have two questions!
-
-1. Why do mRNA vaccines provide more or less protection based on SARS-CoV-2 variants? If they all infect with the spike protein, it should be the same, right?
-
-2. Why do lipid based(Pfizer, Moderna) vaccines appear to be more effective against SARS-CoV-2 than adenovirus vaccines(J&amp;J, etc)?

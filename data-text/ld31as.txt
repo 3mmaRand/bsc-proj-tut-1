@@ -1,8 +1,0 @@
-Are the vaccine efficacies for COVID vaccines able to be directly compared? First,  sorry I missed the AMA (UK based so time zone issues) hopefully someone can comment. My question: We have all heard the quoted 95% for e.g Pfizer and 70% effective for Oxford vaccines.  But it looked to me like the underlying study outputs and processes make those numbers completely incomparable. For example,  Pfizer only tested to confirm  (by PCR)  symptomatic patients,  whilst Oxford tested (at least in the UK cohort) weekly regardless of symptoms,  and as a result picked up a huge number of asymptomatic infections (almost half of the UK infections seen in the study) and included those in calculating its 70% figure.  Surely this means that on a comparable basis the Pfizer efficacy would be much lower? How can we compare them?
-
-EDIT: a number of commenters have pointed out that my question was in fact based on a misunderstanding (I think based on the UK study report alone and not the pooled data article),  and that the Oxford efficacy calculation  appears to have only looked at the symptomatic cases so they are actually more comparable than I had realised. 
-
-Thanks to those commenters.
-
-The quote from the Lancet article in the results section is that:
-"The primary objective was to evaluate the efficacy of ChAdOx1 nCoV-19 vaccine against NAAT-confirmed COVID-19. The primary outcome was virologically confirmed, symptomatic COVID-19, defined as a NAAT-positive swab combined with at least one qualifying symptom (fever e37·8°C, cough, shortness of breath, or anosmia or ageusia)."
