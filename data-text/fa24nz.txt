@@ -1,7 +1,0 @@
-What does it take to develop a vaccine, and why does it take so long? My basic understanding is that a vaccine contains a weakened or dead version of the virus in question, which can be injected into the body so the immune system can develop antibodies without risk of infection. The vaccine acts as a practice run of sorts.
-
-What exactly is it that stops us from just getting a sample of the virus and, say, irradiating it with x-rays or dunking it in some sort of virus-killer chemical (if such a thing exists)? Do we have to figure out how to weaken each virus on a case-by-case basis?
-
-I know there obviously must be some reason, and its not as simple as just *bake virus for 15 minutes, until golden brown*. Otherwise disease just wouldnt be an issue, and thats obviously not the case. Im wondering what makes it so hard.
-
-Edit: Thank you for the answers everyone! To sum things up: its complicated! (Who knew?) But it basically comes down to a whole host of biological factors that I now have a very vague grasp on but am not qualified to summarize (see comments if you want competent biological information), plus a bunch of administrative hurdles.
