@@ -54,15 +54,18 @@ library(conflicted)
 
 
 # then added filters for eg: publication date (last month)
-
-# go to advance search and copy search term
+#  ("virtual reality") AND (treatment) Filters: from 2025/9/1 - 2025/9/14
+# gave 106 results
+# go to Advance search and copy search term
 
 query1 <- '("virtual reality"[All Fields] AND ("therapeutics"[MeSH Terms] OR "therapeutics"[All Fields] OR "treatments"[All Fields] OR "therapy"[MeSH Subheading] OR "therapy"[All Fields] OR "treatment"[All Fields] OR "treatment s"[All Fields])) AND (2025/9/1:2025/9/14[pdat])'
 
 # eg publication type and date
-
+#  ("virtual reality") AND (treatment) Filters: Clinical Trial, English, Exclude preprints, from 2025/6/1 - 2025/9/1
+# gave 90 results
 # query2 <- '("virtual reality"[All Fields] AND ("therapeutics"[MeSH Terms] OR "therapeutics"[All Fields] OR "treatments"[All Fields] OR "therapy"[MeSH Subheading] OR "therapy"[All Fields] OR "treatment"[All Fields] OR "treatment s"[All Fields])) AND ((excludepreprints[Filter]) AND (clinicaltrial[Filter]) AND (2025/6/1:2025/9/1[pdat]) AND (english[Filter]))'
 
+# Down load the search history
 
 # get pubmed ids --------------------------------------------------
 entrez_id <- epm_query(query1)
