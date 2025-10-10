@@ -88,7 +88,22 @@ easyPubMed's own vignette/tutorials
 
 ## Methods tutorial 3
 
-# Obtaining the repo
+# Obtaining the repo and using the repo
+
+Use an updated version of R (\>= 4.4) and RStudio
+
+I used:
+
+-   RStudio 2025.05.0+496 "Mariposa Orchid" Release
+    (f0b76cc00df96fe7f0ee687d4bed0423bc3de1f8, 2025-05-04) for windows
+    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) RStudio/2025.05.0+496 Chrome/132.0.6834.210
+    Electron/34.5.1 Safari/537.36, Quarto 1.7.30 (C:/Program
+    Files/Quarto/bin/quarto.exe)
+
+-   R version 4.5.1 (2025-06-13 ucrt) -- "Great Square Root"
+
+Install: devtools, tidyverse, easyPubMed
 
 You can download this repo with the following command:
 
