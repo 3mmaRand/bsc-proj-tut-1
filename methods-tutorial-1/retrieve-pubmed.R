@@ -35,12 +35,15 @@ library(conflicted)
 
 # https://account.ncbi.nlm.nih.gov/settings/
 # Make an account
-# Generate an API key. Leave the wondow open
+# Generate an API key. Leave the window open
 
 # Back in RStudio
+# You only need to do this step once
 # usethis::edit_r_environ()
 # ENTREZ_KEY='your_actual_key'
 # Restart R for changes to take effect. Ctrl+Shift+F10
+# if you later want to check the key in in your .Renviron file
+# use either Sys.getenv("ENTREZ_KEY") or usethis::edit_r_environ()
 
 # define search terms ---------------------------------------------
 # Go to develop build the query - easier than ensuring your
@@ -65,7 +68,7 @@ query1 <- '("virtual reality"[All Fields] AND ("therapeutics"[MeSH Terms] OR "th
 # gave 90 results
 # query2 <- '("virtual reality"[All Fields] AND ("therapeutics"[MeSH Terms] OR "therapeutics"[All Fields] OR "treatments"[All Fields] OR "therapy"[MeSH Subheading] OR "therapy"[All Fields] OR "treatment"[All Fields] OR "treatment s"[All Fields])) AND ((excludepreprints[Filter]) AND (clinicaltrial[Filter]) AND (2025/6/1:2025/9/1[pdat]) AND (english[Filter]))'
 
-# Down load the search history
+# Down load the search history  the NCBI Advance search page
 
 # get pubmed ids --------------------------------------------------
 entrez_id <- epm_query(query1)
@@ -83,6 +86,8 @@ records
 records@data |> View()
 
 # save the file
+write_csv(records@data,
+          "methods-tutorial-1/data-raw/vr-therapy-pubmed-sept2025.csv")
 
 
 
