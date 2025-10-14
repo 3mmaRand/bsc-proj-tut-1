@@ -1,9 +1,9 @@
 library(tidyverse)
 library(conflicted)
 
-# conflicts_prefer(dplyr::filter)
+conflicts_prefer(dplyr::filter)
 
-# These data are from with the search excuted in
+# These data are from with the search executed in
 # methods-tutorial-1/retrieve-pubmed.R which were saved to
 # methods-tutorial-1/data-raw/vr-therapy-pubmed-sept2025.csv
 
@@ -14,26 +14,25 @@ vr_treatment <- read_csv(file)
 
 # Find out some basic information about the data
 glimpse(vr_treatment)
-# Articles: 101
-# Columns: 18
-# $ pmid        <dbl>
-# $ doi         <chr>
-# $ pmc         <chr>
-# $ journal     <chr>
-# $ jabbrv      <chr>
-# $ lang        <chr>
-# $ year        <dbl>
-# $ month       <dbl>
-# $ day         <dbl>
-# $ title       <chr>
-# $ abstract    <chr>
-# $ mesh_codes  <chr>
-# $ mesh_terms  <chr>
-# $ grant_ids   <chr>
-# $ references  <chr>
-# $ coi         <chr>
-# $ authors     <chr>
-# $ affiliation <chr>
+# $ pmid
+# $ doi
+# $ pmc
+# $ journal
+# $ jabbrv
+# $ lang
+# $ year
+# $ month
+# $ day
+# $ title
+# $ abstract
+# $ mesh_codes
+# $ mesh_terms
+# $ grant_ids
+# $ references
+# $ coi
+# $ authors
+# $ affiliation
+
 
 # number of articles per year
 # remember our search was for 2025/9/1:2025/9/14

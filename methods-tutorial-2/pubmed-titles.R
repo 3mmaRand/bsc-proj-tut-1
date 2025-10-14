@@ -2,14 +2,14 @@
 # when you begin something new
 library(tidyverse)
 library(conflicted)
-
+conflict_prefer("filter", "dplyr")
 library(tidytext)
 
 
 
 # These data are from with the search excuted in
 # methods-tutorial-1/retrieve-pubmed.R which which had columns
-# added indicting whether there were titles or abstracts
+# added indicting whether there were titles or abstracts=
 # methods-tutorial-2/data-supp/vr-therapy-pubmed-sept2025.csv
 
 # Read vr_treatment data with the extra column
