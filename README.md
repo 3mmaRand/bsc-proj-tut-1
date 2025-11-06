@@ -86,7 +86,14 @@ easyPubMed's own vignette/tutorials
 
 ## Methods tutorial 2
 
+Describe stats on the articles retrieved in tutorial 1. Discussion about
+missing data Tokenization of titles
+
 ## Methods tutorial 3
+
+## pubmed-example
+
+Uses the tutorial material for a larger dataset
 
 # Obtaining the repo and using the repo
 
@@ -103,7 +110,7 @@ I used:
 
 -   R version 4.5.1 (2025-06-13 ucrt) -- "Great Square Root"
 
-Install: devtools, tidyverse, easyPubMed
+Install: devtools, tidyverse, easyPubMed, RedditExtractoR
 
 You can download this repo with the following command:
 
