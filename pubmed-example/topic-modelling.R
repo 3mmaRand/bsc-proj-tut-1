@@ -37,6 +37,11 @@ vr_treatment <- vr_treatment |>
 write_csv(vr_treatment,
           "pubmed-example/data-raw/vr-therapy-pubmed-oct2025-abstracts-clean.csv")
 
+stop_words <- rbind(
+  tibble(word = c("virtual", "vr", "reality"),
+         lexicon = "custom"),
+  stop_words)
+
 # WORDS
 # tokenising into words
 # removing stop words
@@ -45,7 +50,7 @@ abstract_word <- vr_treatment |>
                 input = abstract_clean,
                 token = "words") |>
   anti_join(stop_words)
-# 322731 words
+# 309414 words
 
 
 # tabulate for each combination of word and document

@@ -25,7 +25,7 @@ drop_non_english_chunks <- function(text,
   keep_one <- function(x) {
     if (is.na(x) || x == "") return(x)
 
-    # Sentence split (no unsupported args)
+    # Sentence split (no unsupported args)==
     sents <- stringi::stri_split_boundaries(x, type = "sentence")[[1]]
     if (length(sents) == 0) return(x)
 
