@@ -15,8 +15,8 @@ library(tidytext)
 
 conflict_prefer("filter", "dplyr")
 
-source("clean_unicode_text.R")
-source("drop_non_english_chunks.R")
+source("utils/clean_unicode_text.R")
+source("utils/drop_non_english_chunks.R")
 
 # These data are from with the search executed in
 # pubmed-example/retrieve-pubmed-large.R which were filtered
@@ -45,7 +45,7 @@ abstract_word <- vr_treatment |>
                 input = abstract_clean,
                 token = "words") |>
   anti_join(stop_words)
-# 324289 words
+# 322731 words
 
 
 # tabulate for each combination of word and document

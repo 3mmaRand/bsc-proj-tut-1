@@ -1,5 +1,3 @@
-# install.packages(c("stringi","purrr"))          # base deps
-# install.packages("cld3") # or "cld2"            # for language ID (one of them)
 
 drop_non_english_chunks <- function(text,
                                     min_chars   = 25,  # only drop if chunk >= this many chars

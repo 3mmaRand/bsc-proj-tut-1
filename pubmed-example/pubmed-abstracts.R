@@ -6,7 +6,7 @@ library(tidytext)
 
 conflict_prefer("filter", "dplyr")
 
-source("clean_unicode_text.R")
+source("utils/clean_unicode_text.R")
 
 
 # These data are from with the search executed in
@@ -79,7 +79,7 @@ abstract_bigram <- vr_treatment |>
                 input = abstract_clean,
                 token = "ngrams",
                 n = 2)
-# 556018 bigrams
+# 556048 bigrams
 # these include lots of stop words we need to remove
 
 # remove stop words
@@ -90,13 +90,13 @@ abstract_bigram <- abstract_bigram |>
            remove = FALSE) |>
   anti_join(stop_words, by = c("first" = "word")) |>
   anti_join(stop_words, by = c("second" = "word"))
-# now 180552 bigrams
+# now 180366 bigrams
 
 # tabulate abstract_bigram in abstract
 abstract_bigram_count <- abstract_bigram |>
   count(bigram, sort = TRUE) |>
   mutate(percent = 100*n/sum(n))
-# 91270 different bigrams
+# 91093 different bigrams
 
 abstract_bigram_count |>
   filter(percent > 0.1) |>
@@ -124,13 +124,13 @@ abstract_trigram <- abstract_trigram |>
   anti_join(stop_words, by = c("first" = "word")) |>
   anti_join(stop_words, by = c("second" = "word")) |>
   anti_join(stop_words, by = c("third" = "word"))
-# now 98526 trigrams
+# now 98344 trigrams
 
 # tabulate abstract_trigram in abstract
 abstract_trigram_count <- abstract_trigram |>
   count(trigram, sort = TRUE) |>
   mutate(percent = 100*n/sum(n))
-# 76812 different trigrams
+# 76631 different trigrams
 
 abstract_trigram_count |>
   filter(percent > 0.05) |>
