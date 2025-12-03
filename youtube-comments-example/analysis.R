@@ -274,15 +274,16 @@ top_terms |>
   scale_x_reordered()
 
 
-# ter rms that had the greatest difference beta
-# between topic 1 and topic 2
+# create models with different number of topics
+result <- ldatuning::FindTopicsNumber(
+  comment_dtm,
+  topics = seq(from = 2, to = 40, by = 1),
+  metrics = c("CaoJuan2009",  "Deveaud2014", "Arun2010", "Griffiths2004"),
+  method = "Gibbs",
+  control = list(seed = 77),
+  verbose = TRUE
+)
 
-beta_wide <- vr_topics  |>
-  mutate(topic = paste0("topic", topic)) |>
-  pivot_wider(names_from = topic, values_from = beta) |>
-  filter(topic1 > .001 | topic2 > .001) |>
-  mutate(log_ratio = log2(topic2 / topic1))
-
-
+ldatuning::FindTopicsNumber_plot(result)
 
 
